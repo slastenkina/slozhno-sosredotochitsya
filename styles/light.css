@@ -20,14 +20,3 @@
 
 
 /* Остальные стили */
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg-color: #ffc2e6;
-    --text-color: #353430;
-    --accent-color: #ff8dcb;
-  }
-  .page {
-    background-image: url(../images/cover-image-light.png);
-  }
-}

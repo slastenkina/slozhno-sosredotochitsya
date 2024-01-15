@@ -12,10 +12,12 @@
 
 .decorated-zone {
   padding: 10px;
+  
 }
 
 .header {
   min-block-size: 668px;
+  block-size: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -118,7 +120,6 @@ a {
 }
 
 .content__pictures {
-  margin-block-start: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
   gap: 10px;
@@ -127,6 +128,26 @@ a {
 .content__picture {
 inline-size: 100%;
 }
+
+.footer {
+  min-block-size: 668px;
+  block-size: 100%;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.footer__title {
+  color: var(--main-title-color, #db00ff);
+  text-shadow: 2px 2px 0px var(--accent-color, #ff0070);
+  text-transform: lowercase;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-style: normal;
+  font-weight: 700;
+  text-align: start;
+}
+
 
 
 /* далее медиа-запросы*/

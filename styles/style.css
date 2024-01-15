@@ -2,4 +2,131 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: url(../images/cover-image-dark.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 18px;
 }
+
+.decorated-zone {
+  padding: 10px;
+}
+
+.header {
+  min-block-size: 668px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+}
+
+.header__theme-menu {
+  padding-block-start: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  display: inline-flex;
+  height: 26px;
+  padding: 0px 13px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: var(--accent-color, #ff0070);
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color, #ff0070);
+}
+
+.header__title {
+  color: var(--main-title-color, #db00ff);
+  text-shadow: 4px 4px 0px var(--accent-color, #ff0070);
+  text-transform: lowercase;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.825;
+  text-align: start;
+}
+
+.title-decor {
+  color: var(--title-color, #000028);
+  background-color: var(--accent-color, #ff0070);
+  font-weight: 700;
+  line-height: 1.3;
+  font-size: 18px;
+}
+
+.header__text {
+  margin-block-end: 10px;
+}
+
+.content {
+  margin: 40px auto;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 50px;
+}
+
+.content__article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 20px;
+}
+
+.accent-title {
+  color: var(--accent-color, #ff0070);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.30;
+}
+
+.content__description {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 20px;
+}
+
+.content__text {
+  margin-block-start: 10px;
+  color: var(--text-color, #F1B2CE);
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+  text-shadow: 2px 1px 0px #FF0070;
+}
+
+.content__advice_title {
+  font-weight: 400;
+}
+
+.content__pictures {
+  margin-block-start: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 10px;
+}
+
+.content__picture {
+inline-size: 100%;
+}
+
+
+/* далее медиа-запросы*/

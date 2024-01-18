@@ -38,7 +38,7 @@
     --accent-text-color: #353430;
     --link-color: #ff8dcb;
   }
-  .page {
+  .page.theme_auto {
     background-image: url(../images/cover-image-light.png);
   }
 }

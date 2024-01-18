@@ -4,7 +4,7 @@
   переключая тему
 */
 :root .theme_dark {
-  --rec-color: #ff0070;
+  --bg-image: url(../images/cover-image-dark.png);
   --bg-color: #000028;
   --main-title-color: #db00ff;
   --main-title-shadow: #ff0070;
@@ -20,14 +20,9 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background-image: url(../images/cover-image-dark.png);
-
+  /* background-image: var(--bg-image);*/
 }
 
 /*остальные стили*/
 
-@media (prefers-color-scheme: dark) {
-  .page.theme_auto {
-    background-image: url(../images/cover-image-dark.png);
-  }
-}
+

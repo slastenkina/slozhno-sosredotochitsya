@@ -11,7 +11,6 @@
 }
 
 .decorated-zone {
-  padding: 10px;
   position: relative;
 }
 
@@ -38,6 +37,7 @@
 }
 
 .header {
+  padding: 10px 10px 0 10px;
   min-block-size: 668px;
   block-size: 100vh;
   display: grid;
@@ -140,7 +140,7 @@
 }
 
 .accent-title {
-  color: var(--title-color, #ff0070);
+  color: var(--accent-text-color, #ff0070);
   font-size: 18px;
   font-weight: 700;
   line-height: 1.3;

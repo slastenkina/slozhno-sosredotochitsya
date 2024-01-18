@@ -3,7 +3,7 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme_dark {
+:root .theme_dark {
   --rec-color: #ff0070;
   --bg-color: #000028;
   --main-title-color: #db00ff;
@@ -21,13 +21,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   background-image: url(../images/cover-image-dark.png);
-  --bg-color: #000028;
-  --main-title-color: #db00ff;
-  --title-color: #000028;
-  --text-color: #f1b2ce;
-  --accent-bg-color: #ff0070;
-  --accent-text-color: #ff0070;
-  --link-color: #ff0070;
+
 }
 
 /*остальные стили*/

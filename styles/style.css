@@ -121,6 +121,8 @@
 
 .header__text {
   margin-block-end: 10px;
+  max-width: 491px;
+  justify-self: end;
 }
 
 .content {

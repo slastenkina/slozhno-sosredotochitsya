@@ -3,7 +3,7 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme_light {
+:root .theme_light {
   --rec-color: transparent;
   --bg-color: #fff1f7;
   --main-title-color: #ffc2e6;
@@ -21,15 +21,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   background-image: url(../images/cover-image-light.png);
-  --rec-color: transparent;
-  --bg-color: #fff1f7;
-  --main-title-color: #ffc2e6;
-  --main-title-shadow: #FF8DCB;
-  --title-color: #353430;
-  --text-color: #353430;
-  --accent-bg-color: #ff8dcb;
-  --accent-text-color: #353430;
-  --link-color: #ff8dcb;
+
 }
 
 /* Остальные стили */

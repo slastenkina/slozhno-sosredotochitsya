@@ -55,9 +55,14 @@ button:focus-visible {
   border-block-end: 1px solid currentColor;
 }
 
-a:hover,
+a:hover {
+  cursor: pointer;
+  border-block-end: 1px solid currentColor;
+}
+
 button:hover {
   cursor: pointer;
+  outline: 1px solid currentColor;
 }
 
 button:disabled {

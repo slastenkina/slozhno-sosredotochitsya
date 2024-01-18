@@ -2,9 +2,9 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: url(../images/cover-image-dark.png);
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-size: cover;
   background-attachment: fixed;
   font-family: "IBM Plex Mono", sans-serif;
   font-size: 18px;
@@ -12,16 +12,64 @@
 
 .decorated-zone {
   padding: 10px;
-  
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--accent-text-color, #ff0070);
+  border-inline-end: 1px solid var(--accent-text-color, #ff0070);
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+  position: absolute;
+}
+
+.decorated-zone::after {
+  content: "";
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-end: 1px solid var(--accent-text-color, #ff0070);
+  border-inline-start: 1px solid var(--accent-text-color, #ff0070);
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
+  position: absolute;
 }
 
 .header {
   min-block-size: 668px;
-  block-size: 100%;
+  block-size: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
+}
+.header__decor {
+  margin: 0;
+  position: absolute;
+  z-index: -1;
+  inset-block-start: 10px;
+  inset-inline-end: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__decor::before {
+  content: "rec";
+  text-transform: uppercase;
+  color: var(--accent-bg-color, #ff0070);
+}
+
+.header__decor::after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px var(--accent-bg-color, #ff0070);
+  inline-size: 9px;
+  block-size: 9px;
+  background-color: var(--accent-bg-color, #ff0070);
 }
 
 .header__theme-menu {
@@ -42,21 +90,20 @@
   display: inline-flex;
   height: 26px;
   padding: 0px 13px;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   background-color: transparent;
   border: none;
-  color: var(--accent-color, #ff0070);
+  color: var(--accent-text-color, #ff0070);
   text-transform: lowercase;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color, #ff0070);
+  border: 1px solid var(--accent-text-color, #ff0070);
 }
 
 .header__title {
   color: var(--main-title-color, #db00ff);
-  text-shadow: 4px 4px 0px var(--accent-color, #ff0070);
+  text-shadow: 4px 4px 0px var(--main-title-shadow, #ff0070);
   text-transform: lowercase;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
@@ -67,7 +114,7 @@
 
 .title-decor {
   color: var(--title-color, #000028);
-  background-color: var(--accent-color, #ff0070);
+  background-color: var(--accent-bg-color, #ff0070);
   font-weight: 700;
   line-height: 1.3;
   font-size: 18px;
@@ -92,10 +139,10 @@
 }
 
 .accent-title {
-  color: var(--accent-color, #ff0070);
+  color: var(--title-color, #ff0070);
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.30;
+  line-height: 1.3;
 }
 
 .content__description {
@@ -106,13 +153,13 @@
 
 .content__text {
   margin-block-start: 10px;
-  color: var(--text-color, #F1B2CE);
+  color: var(--text-color, #f1b2ce);
   line-height: 1.3;
 }
 
 a {
   text-decoration: none;
-  text-shadow: 2px 1px 0px #FF0070;
+  text-shadow: 2px 1px 0px var(--link-color, #ff0070);
 }
 
 .content__advice_title {
@@ -126,28 +173,28 @@ a {
 }
 
 .content__picture {
-inline-size: 100%;
+  inline-size: 100%;
+  object-position: center;
+  object-fit: cover;
 }
 
 .footer {
   min-block-size: 668px;
-  block-size: 100%;
+  block-size: 100vh;
   display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__title {
   color: var(--main-title-color, #db00ff);
-  text-shadow: 2px 2px 0px var(--accent-color, #ff0070);
+  text-shadow: 2px 2px 0px var(--main-title-shadow, #ff0070);
   text-transform: lowercase;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   font-weight: 700;
   text-align: start;
 }
-
-
 
 /* далее медиа-запросы*/

@@ -5,7 +5,10 @@
 :root {
   --bg-color: #000028;
   --main-title-color: #db00ff;
+  --main-title-shadow: #ff0070;
   --title-color: #000028;
-  --text-color: #F1B2CE;
-  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --accent-bg-color: #ff0070;
+  --accent-text-color: #ff0070;
+  --link-color: #ff0070;
 }

@@ -3,6 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
+  --rec-color: #ff0070;
   --bg-color: #000028;
   --main-title-color: #db00ff;
   --main-title-shadow: #ff0070;

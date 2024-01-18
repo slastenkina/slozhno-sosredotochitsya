@@ -4,9 +4,10 @@
   переключая тему
 */
 :root.theme_light {
+  --rec-color: transparent;
   --bg-color: #fff1f7;
   --main-title-color: #ffc2e6;
-  --main-title-shadow: #ff0070;
+  --main-title-shadow: #FF8DCB;
   --title-color: #353430;
   --text-color: #353430;
   --accent-bg-color: #ff8dcb;
@@ -20,9 +21,10 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   background-image: url(../images/cover-image-light.png);
+  --rec-color: transparent;
   --bg-color: #fff1f7;
   --main-title-color: #ffc2e6;
-  --main-title-shadow: #ff0070;
+  --main-title-shadow: #FF8DCB;
   --title-color: #353430;
   --text-color: #353430;
   --accent-bg-color: #ff8dcb;
@@ -34,9 +36,10 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    --rec-color: transparent;
     --bg-color: #fff1f7;
     --main-title-color: #ffc2e6;
-    --main-title-shadow: #ff0070;
+    --main-title-shadow: #FF8DCB;
     --title-color: #353430;
     --text-color: #353430;
     --accent-bg-color: #ff8dcb;

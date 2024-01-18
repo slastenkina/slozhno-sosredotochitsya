@@ -4,7 +4,6 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-size: cover;
   background-position: center center;
-  background-size: cover;
   background-attachment: fixed;
   font-family: "IBM Plex Mono", sans-serif;
   font-size: 18px;
@@ -59,17 +58,17 @@
 .header__decor::before {
   content: "rec";
   text-transform: uppercase;
-  color: var(--accent-bg-color, #ff0070);
+  color: var(--rec-color, #ff0070);
 }
 
 .header__decor::after {
   content: "";
   display: inline-block;
   border-radius: 50%;
-  box-shadow: 0 0 2px 2px var(--accent-bg-color, #ff0070);
+  box-shadow: 0 0 2px 2px var(--rec-color, #ff0070);
   inline-size: 9px;
   block-size: 9px;
-  background-color: var(--accent-bg-color, #ff0070);
+  background-color: var(--rec-color, #ff0070);
 }
 
 .header__theme-menu {

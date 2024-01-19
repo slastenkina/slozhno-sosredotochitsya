@@ -299,7 +299,7 @@ a {
     align-self: baseline;
   }
 
-  .header__title {
+  .header__title, .footer__title {
     --main-title-shadow: #ff0070;
   }
 

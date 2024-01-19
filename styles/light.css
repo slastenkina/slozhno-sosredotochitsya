@@ -13,21 +13,13 @@
   --accent-bg-color: #ff8dcb;
   --accent-text-color: #353430;
   --link-color: #ff8dcb;
-}
-
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --hover-border-color: #35343040;
 }
 
 .theme_light .header__decor::after,
 .theme_light .header__decor::before {
   visibility: hidden;
 }
-
-/* Остальные стили */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -40,10 +32,11 @@
     --accent-bg-color: #ff8dcb;
     --accent-text-color: #353430;
     --link-color: #ff8dcb;
+    --hover-border-color: #35343040;
   }
- 
-  .theme_auto .header__decor::after,
-  .theme_auto .header__decor::before {
+
+  .header__decor::after,
+  .header__decor::before {
     visibility: hidden;
   }
 }

@@ -8,8 +8,10 @@
   --main-title-color: #db00ff;
   --main-title-shadow: #ff0070;
   --title-color: #000028;
+  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --text-color: #f1b2ce;
   --accent-bg-color: #ff0070;
   --accent-text-color: #ff0070;
   --link-color: #ff0070;
+  --hover-border-color: #ff007040;
 }

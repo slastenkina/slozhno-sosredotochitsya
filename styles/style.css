@@ -2,11 +2,11 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: var(--bg-image);
+  background-image: var(--bg-image, --bg-color, #000028);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 18px;
 }
 
@@ -83,12 +83,11 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  gap: 11px;
+  gap: 13px;
 }
 
 .header__theme-menu-button {
   display: inline-flex;
-  height: 26px;
   padding: 0px 13px;
   text-align: center;
   background-color: transparent;
@@ -105,7 +104,7 @@
   color: var(--main-title-color, #db00ff);
   text-shadow: 4px 4px 0px var(--main-title-shadow, #ff0070);
   text-transform: lowercase;
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--title-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: 0.825;
@@ -197,7 +196,7 @@ a {
   color: var(--main-title-color, #db00ff);
   text-shadow: 2px 2px 0px var(--main-title-shadow, #ff0070);
   text-transform: lowercase;
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--title-font-size);
   font-style: normal;
   font-weight: 700;
   text-align: start;
@@ -208,8 +207,6 @@ a {
 @media (width >= 768px) {
   .header {
     padding: 20px;
-    min-block-size: 768px;
-    block-size: 100vh;
   }
 
   .header__title {
@@ -230,7 +227,6 @@ a {
   .header__decor {
     inset-block-start: 22px;
     inset-inline-end: 30px;
-    gap: 10px;
   }
 
   .content {
@@ -246,8 +242,8 @@ a {
 
   .accent-title.what {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
 
   .content__pictures {

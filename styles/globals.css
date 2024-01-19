@@ -62,7 +62,7 @@ a:hover {
 
 button:hover {
   cursor: pointer;
-  outline: 1px solid currentColor;
+  outline: 1px solid var(--hover-border-color, #ff007040);
 }
 
 button:disabled {

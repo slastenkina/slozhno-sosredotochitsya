@@ -42,7 +42,6 @@
     --link-color: #ff8dcb;
   }
  
-
   .theme_auto .header__decor::after,
   .theme_auto .header__decor::before {
     visibility: hidden;
